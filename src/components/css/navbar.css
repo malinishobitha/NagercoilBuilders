@@ -12,7 +12,7 @@
   .nav-link {
     color: white !important;
     font-size: 16px;
-
+    
   }
   .nav-item a{
       font-weight: 600;
@@ -68,5 +68,5 @@
      border:0px solid black;
      max-width: 500px;
      margin: auto;
-     margin-right: 10px;  
+     margin-right: 40px;  
   }

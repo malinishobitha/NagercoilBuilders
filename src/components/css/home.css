@@ -89,10 +89,12 @@
     z-index: -1;
   }
 .whychoose{
-  
-  text-align: center;
-  max-width:800px ;
   margin: auto;
+  max-width:800px ;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
 
 }
 .whychoose span{
@@ -298,6 +300,7 @@
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 .builder-item {
@@ -338,7 +341,8 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  margin-bottom: auto
+  margin-bottom: 55%;
+  justify-content: space-evenly;
 }
 
 .background-banner img {
@@ -371,6 +375,8 @@
   flex-wrap: nowrap;
   justify-content: center;
   width: 90%;
+  border: 0px solid black;
+  justify-content: space-evenly;
 }
 
 .package-det {
@@ -449,7 +455,7 @@
 }
 .building-projctimg {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
@@ -687,48 +693,125 @@
   font-weight: bold;
 }
 
-
-/* Responsive Design: For smaller screens */
-@media (max-width: 768px) {
-  .consulting-det {
-    flex-direction: column;  
-    align-items: center;
-  }
-
-  .consulting-details,
-  .consulting-img {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .consulting-details p {
-    font-size: 1rem;
-  }
-
-  .consulting-img img {
-    max-width: 100%;
-  }
+.container-Fluid {
+    width: 100%;
+    padding: 0 15px;
 }
 
-
-/* Responsive Design */
+/* Responsive Banner */
 @media (max-width: 768px) {
-  .bulding-det {
-      flex-direction: column;
-      align-items: center;
-  }
+    .banner-content {
+        top: 50%;
+        width: 90%;
+        padding: 15px;
+    }
+    .banner-content h1 {
+        font-size: 1.5rem;
+    }
+    .banner-content p {
+        font-size: 1rem;
+    }
+    .service-det {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .service-img img {
+        height: 250px;
+    }
 
-  .package-det {
-      max-width: 100%;
+    .construction-reason {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Team {
+        justify-content: center;
+    }
+
+    .builder-det {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .builder-item {
+        width: 120px;
+    }
+
+    .About-det {
+        flex-direction: column;
+        align-items: center;
+    }
+    .About-img img {
+        max-width: 100%;
+    }
+    .consulting-det {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .consulting-img {
+        max-width: 100%;
+        text-align: center;
+    }
+    .consulting-img img {
+        width: 80%;
+    }
+    .nagercovilbuilders {
+     
+      width: 100%; 
+      
+    }
+    
+    .builder-det {
+      display: flex;
+      flex-wrap: nowrap;
+     
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .builder-item {
+      width: 80px;
+      border-radius: 50%;
+      gap: 5px;
+    }
+    
+    .builder-item img {
+      width: 30px;
+      margin-bottom: 10px; 
+    }
+    
+    .builder-item p {
+      font-weight: bold;
+      color: #fff; 
+      font-size: 8px;
+      
+    }
+   
+  
+  .package-det{
+      padding: 10px;
+      width: 200px;
+      height: 280px; /* Minimum height instead of fixed height */
+      font-size: 6px;
   }
+  .package-det1{
+    padding: 10px;
+    width: 200px;
+    height: 380px; /* Minimum height instead of fixed height */
+    font-size: 6px;
 }
-
-/* Responsive Fix */
-@media (max-width: 600px) {
-  .service-det {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .service-img img, .service-img1 img, .service-img2 img {
-    height: 180px;
-  }
+.package-det2{
+  padding: 10px;
+  width: 200px;
+  height: 480px; 
+  font-size: 6px;
+}
+  
+.bulding-det{
+  border:0px solid black;
+  top: 50%;
+}
+      .package-det button, .package-det1 button, .package-det2 button {
+          width: 100%; /* Full-width button */
+          margin-left: 0;
+      }
 }
