@@ -3,6 +3,7 @@ import BannerImage from './images/Design package img 2.png';
 import BackgroundBanner from './images/Design package img 1.png'
 const Contact = () => {
     return (
+        <div>
         <div className="container-Fluid">
             <div className='banner'>
                 <img src={BannerImage} alt="banner" />
@@ -85,6 +86,7 @@ const Contact = () => {
                         <button>Book Now</button>
                     </div>
                     </div>
+             </div>
              </div>
              </div>
         
