@@ -1,0 +1,165 @@
+/* Footer Wrapper */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    background: #040837;
+    padding: 40px 20px;
+    color: white;
+    margin-top: 10%;
+}
+
+/* Footer Sections */
+.footer-det {
+    
+    padding: 10px;
+}
+
+/* Builder Details Box */
+.builder-details {
+    display: flex;
+    
+    width: 420px;
+    justify-content: space-evenly;
+    padding: 15px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+/* Logo Styling */
+.footer-img img {
+    width: 50px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 110px;
+}
+
+.footer-img img:hover {
+    transform: scale(1.1);
+}
+
+/* Headings */
+.footer-det h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-det span {
+    color: #f39c12;
+}
+
+/* Paragraph Styling */
+.footer-det p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+/* Footer Links */
+.footer-det h5 {
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    position: relative;
+}
+
+.footer-det h5::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #FFCC00;
+    transition: width 0.3s ease-in-out;
+}
+
+.footer-det h5:hover::after {
+    width: 100%;
+}
+
+/* Social Media Icons */
+.icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+/* Contact Section Icons */
+.footer-det h2 {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.footer-det h2 i {
+    color: #f39c12;
+}
+/* Default Instagram Icon Style */
+.bi-instagram {
+    color: #E1306C;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.icons i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+/* YouTube Icon - Red */
+.bi-youtube {
+    color: #FF0000;
+}
+/* Facebook Icon - Blue */
+.bi-facebook {
+    color: #1877F2;
+}
+
+.icons i:hover {  
+    transform: scale(1.2);
+}
+.bi-telephone-fill, .bi-envelope, .bi-globe, .bi-geo-alt{
+    background-color: #FFCC00;
+    padding: 5px;
+    border-radius: 100%;
+    color: #040837;
+    text-align: center;
+    padding-right: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-det {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .builder-details {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        max-width: 320px;
+        padding: 20px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+}

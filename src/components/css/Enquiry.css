@@ -1,0 +1,122 @@
+/* Container styling */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Main enquiry section */
+.enquiry-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px; 
+    overflow: hidden; 
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.Enquiry {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    background-color: #fbf6b5;
+}
+
+.Enquiry img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Enquiry h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.Enquiry p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.Enquiry span {
+    color: #FFCC00;
+}
+.Enquiry-form {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.Enquiry-form h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.Enquiry-form input,
+.Enquiry-form select,
+.Enquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #FFCC00;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    transition: border-color 0.3s ease-in-out; 
+}
+
+
+.Enquiry-form input:hover,
+.Enquiry-form select:hover,
+.Enquiry-form textarea:hover {
+    border-color: #FFD700; 
+}
+
+
+.Enquiry-form input:focus,
+.Enquiry-form select:focus,
+.Enquiry-form textarea:focus {
+    border-color: #FFA500;
+    outline: none;
+}
+
+/* Textarea specific styling */
+.Enquiry-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit Button */
+.Enquiry-form button {
+    background-color: #FFCC00;
+    color: #040837;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Button Hover */
+.Enquiry-form button:hover {
+    background-color: #040837;
+}
+
+/* Label Styling */
+
+.checkbox-button {
+    display: flex;
+    align-items: center; 
+    gap: 18px; 
+}
+
+.checkbox-button input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 30px; 
+}
+
