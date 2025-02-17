@@ -13,10 +13,10 @@ const About = () => {
             </div>
             <div className="About-det">
                 <div className="About-img">
-                    <img src={AboutImage1} alt='about image' />
+                    <img src={AboutImage1} alt='about-image' />
                 </div>
                 <div className="About-details">
-                    <p>At <span>Nagercovil builders </span>we specialize in construciting innovative and tailored your vision. 
+                    <p>At <span>Nagercoil builders </span>we specialize in construciting innovative and tailored your vision. 
                     With years of expertise ad a commitment to excellence we deliver projects that combine functionality, aesthetics and sustainability.  
                     From design to delivery, we ensure every step of the process meets the highest standards. </p>
                 </div>

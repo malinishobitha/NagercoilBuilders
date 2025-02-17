@@ -35,7 +35,7 @@ function HomePage() {
                     <div className='banner-content'>
                         <h1>Your <span>dream</span> space, build to perfection.</h1>
                         <p>Ready to bring your project to life? Let’s create something extraordinary together. </p>
-                        <button>Book Now</button>
+                        <a href='Enquiryform'><button>Book Now</button></a>
                     </div>
                 </div>
                 <div className='nagercovilbuilders'>
@@ -81,7 +81,7 @@ function HomePage() {
                                 <img src={experiencedTeamImage} alt="Banner" />
                             </div>
                             <div className='details'>
-                                <h5>Experienced Team</h5>
+                                <h5>Experienced Team</h5><br></br>
                                 <p>Our experienced team combine expertise, innovation, and dedication to deliver exceptional construction
                                     results tailored to your vision.</p>
                             </div>
@@ -92,7 +92,7 @@ function HomePage() {
                                 <img src={customizedImage} alt='builders' />
                             </div>
                             <div className='details'>
-                                <h5>Customizable Designs</h5>
+                                <h5>Customizable Designs</h5><br></br>
                                 <p>Experience the freedom of customizable designs tailored to match your unique vision and
                                     lifestyle</p>
                             </div>
@@ -102,7 +102,7 @@ function HomePage() {
                                 <img src={timelyImage} alt='builders' />
                             </div>
                             <div className='details'>
-                                <h5>Timely Completion</h5>
+                                <h5>Timely Completion</h5><br></br>
                                 <p>We are committed to delivering every project on time, ensuring efficient execution without compromising on quality.
                                 </p>
                             </div>
@@ -114,7 +114,7 @@ function HomePage() {
                                 <img src={qualityImage} alt="Banner" />
                             </div>
                             <div className='details'>
-                                <h5>Quality Construction</h5>
+                                <h5>Quality Construction</h5><br></br>
                                 <p>Delivering excellence through superior craftsmanship durable materials, and meticulous attention to detail in every project.</p>
                             </div>
                         </div>
@@ -125,7 +125,7 @@ function HomePage() {
                             </div>
                             <div className='details'>
                                 <h5>Transparent Process
-                                </h5>
+                                </h5><br></br>
                                 <p>Our transparent process ensures clear communication, no hidden costs, and full visibility at every stage, so you can trust us to deliver exactly
                                     what we promise</p>
                             </div>
@@ -137,6 +137,7 @@ function HomePage() {
                             <div className='details'>
                                 <h5>In-house team of experts
                                 </h5>
+                                <br></br>
                                 <p>Our in house team of experts ensures every project is executed with precision, expertise, and dedication
                                 </p>
                             </div>
@@ -188,7 +189,7 @@ function HomePage() {
                 <div className='client-reviews-det'>
                     <h1>Our <span>Client</span> Reviews</h1>
                     <div className='client-details'>
-                        <div className='client-det'>
+                        
 
                             <div className='client-review-img'>
                                 <img src={clientRieview} alt='rieview' />
@@ -250,7 +251,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-        </div>
+       
 
 
     );

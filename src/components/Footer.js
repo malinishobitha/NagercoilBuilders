@@ -23,10 +23,11 @@ function Footer() {
                 </div>
                 <div className='footer-det'>
                     <h1><span>Categories</span></h1>
-                    <h5>Home</h5>
-                    <h5>About Us</h5>
-                    <h5>Why Choose US</h5>
-                    <h5>Services</h5>
+                <a href='/'><h5>Home</h5></a>
+                <a href='About'><h5>About Us</h5></a>
+                <a href='services'><h5>Services</h5></a>
+                  <a href='Contact'><h5>Plans & Pricing</h5></a>
+                  
                 </div>
                 <div className='footer-det'>
                     <h1><span>Contact Us</span></h1>
