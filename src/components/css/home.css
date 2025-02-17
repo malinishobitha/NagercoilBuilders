@@ -152,36 +152,41 @@
   max-width: 900px;
   margin: auto;
   margin-top: 20px;
+
 }
 .service p{
   font-size: 20px;
   font-weight: 500;
 }
 .service-det {
-  
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  display: flex;
+  flex-wrap: wrap ;
+  margin-top: 40px;
   gap: 20px;
   justify-content: center;
-  margin-top: 40px;
 }
 
 .service-img, .service-img1, .service-img2 {
   position: relative;
-  width: 100%;
   text-align: center;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.service-img img, .service-img1 img, .service-img2 img {
-  width: 100%;
+.service-img img, .service-img2 img {
   height: 300px;
   object-fit: cover;
   transition: transform 0.4s ease-in-out;
   border-radius: 10px;
 }
-
+.service-img1 img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 10px;
+  width:700px;
+}
 /* Hover Zoom Effect */
 .service-img:hover img, .service-img1:hover img, .service-img2:hover img {
   transform: scale(1.1);
@@ -195,7 +200,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   border-radius: 10px;
@@ -205,8 +209,9 @@
   opacity: 1;
 }
 
+
 /* Button Common Style */
-.service-img button, .service-img1 button, .service-img2 button {
+.service-img button, .service-img1 button{
   position: absolute;
   width: 250px;
   padding: 10px 20px;
@@ -217,6 +222,19 @@
   border: 1px solid #CCC;
   border-radius: 10px;
   cursor: pointer; 
+}
+.service-img2 button{
+  position: absolute;
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #eff5b1;
+  background-color: #040837;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  cursor: pointer; 
+  margin-left:50px;
 }
 
 /* Button hover effect */
@@ -402,8 +420,6 @@
   font-size: 13px;
   padding: auto;
   margin-top: 15%;
-  font-size: 13px;
-  padding: auto;
 }
 .package-det2 {
   background: rgba(241, 248, 184, 0.9);
@@ -414,6 +430,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: 700px;
   font-size: 13px;
+  padding: auto;
 }
 
 
@@ -431,6 +448,9 @@
 .package-det ul {
   list-style: disc;
   padding: 0;
+}
+.package-det ul li::marker,.package-det1 ul li::marker,.package-det2 ul li::marker{
+    color: #FFCC00; 
 }
 
 .package-det ul li, .package-det1 ul li, .package-det2 ul li{
@@ -550,8 +570,7 @@
   gap: 20px;
   background-color: #eff5b1;
   padding: 60px;
-  margin-top: -40px;
-  margin-bottom: -10%;
+  margin-bottom:-5%;
 }
 
 /* Consulting Text Details */
@@ -632,7 +651,9 @@
   text-align: center;
   width: 320px;
 }
-
+.client-review-img:hover{
+  scale: 1.1;
+}
 /* Client Review (Appears Above Image) */
 .client-review {
   position: absolute;
@@ -758,18 +779,21 @@
       width: 100%; 
       
     }
-    
+    .nagercovilbuilders img{
+     
+      width: 100%; 
+      
+    }
     .builder-det {
       display: flex;
       flex-wrap: nowrap;
-     
       top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
     
     .builder-item {
-      width: 80px;
+      width: 65px;
       border-radius: 50%;
       gap: 5px;
     }
@@ -780,23 +804,25 @@
     }
     
     .builder-item p {
-      font-weight: bold;
+      font-weight: 500;
       color: #fff; 
       font-size: 8px;
       
     }
+   .nagercovilbuilders h1{
+    font-size: 20px;
+     }
    
-  
   .package-det{
       padding: 10px;
       width: 200px;
-      height: 280px; /* Minimum height instead of fixed height */
+      height: 280px; 
       font-size: 6px;
   }
   .package-det1{
     padding: 10px;
     width: 200px;
-    height: 380px; /* Minimum height instead of fixed height */
+    height: 380px; 
     font-size: 6px;
 }
 .package-det2{

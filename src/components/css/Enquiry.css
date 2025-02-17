@@ -2,23 +2,29 @@
 .container {
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Main enquiry section */
 .enquiry-container {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 10px; 
-    overflow: hidden; 
+    border-radius: 10px;
+    overflow: hidden;
     background-color: #f9f9f9;
     padding: 20px;
 }
 
+/* Enquiry section */
 .Enquiry {
     flex: 1;
     max-width: 50%;
     padding: 20px;
     background-color: #fbf6b5;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+
+    
 }
 
 .Enquiry img {
@@ -27,19 +33,22 @@
 }
 
 .Enquiry h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .Enquiry p {
-    font-size: 18px;
+    font-size: 1.5rem;
     margin-top: 10px;
-    font-weight: 800;
+    font-weight: 500;
+    text-align: center;
 }
 
 .Enquiry span {
     color: #FFCC00;
 }
+
+/* Form section */
 .Enquiry-form {
     flex: 1;
     max-width: 50%;
@@ -49,7 +58,7 @@
 }
 
 .Enquiry-form h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 20px;
 }
 
@@ -61,18 +70,16 @@
     margin: 10px 0;
     border: 1px solid #FFCC00;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: white;
-    transition: border-color 0.3s ease-in-out; 
+    transition: border-color 0.3s ease-in-out;
 }
-
 
 .Enquiry-form input:hover,
 .Enquiry-form select:hover,
 .Enquiry-form textarea:hover {
-    border-color: #FFD700; 
+    border-color: #FFD700;
 }
-
 
 .Enquiry-form input:focus,
 .Enquiry-form select:focus,
@@ -96,7 +103,7 @@
     border: none;
     border-radius: 4px;
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
@@ -104,19 +111,71 @@
 /* Button Hover */
 .Enquiry-form button:hover {
     background-color: #040837;
+    color: #FFCC00;
 }
 
-/* Label Styling */
-
+/* Checkbox Styling */
 .checkbox-button {
     display: flex;
-    align-items: center; 
-    gap: 18px; 
+    align-items: center;
+    gap: 18px;
 }
 
 .checkbox-button input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    margin: 30px; 
+    margin: 30px;
+}
+.Enquiry-form input::placeholder,
+.Enquiry-form textarea::placeholder {
+    color: rgb(17, 17, 17);
+    opacity: 1; 
+    font-weight: 600;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .enquiry-container {
+        flex-direction: column;
+    }
+
+    .Enquiry,
+    .Enquiry-form {
+        max-width: 100%;
+    }
+
+    .Enquiry h1 {
+        font-size: 1.75rem;
+    }
+
+    .Enquiry p {
+        font-size: 1rem;
+    }
+
+    .Enquiry-form h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .Enquiry h1 {
+        font-size: 1.5rem;
+    }
+
+    .Enquiry p {
+        font-size: 0.9rem;
+    }
+
+    .Enquiry-form h1 {
+        font-size: 1.25rem;
+    }
+
+    .Enquiry-form button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

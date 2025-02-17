@@ -8,7 +8,7 @@
     background: #040837;
     padding: 40px 20px;
     color: white;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 /* Footer Sections */
@@ -18,8 +18,7 @@
 
 /* Builder Details Box */
 .builder-details {
-    display: flex;
-    
+    display: flex;    
     width: 420px;
     justify-content: space-evenly;
     padding: 15px;
@@ -67,6 +66,7 @@
     cursor: pointer;
     transition: 0.3s;
     color: white;
+    line-height: 1.6;
     position: relative;
 }
 
@@ -82,8 +82,6 @@
 .footer-det h5:hover::after {
     width: 20%;
 }
-
-/* Social Media Icons */
 .icons {
     margin-top: 10px;
     display: flex;
@@ -139,6 +137,7 @@
     .footer {
         flex-direction: column;
         align-items: center;
+
     }
 
     .footer-det {
@@ -156,4 +155,17 @@
     .icons {
         justify-content: center;
     }
+    .footer-det p {
+        font-size: 12px;
+        line-height: 1.6;
+        color: white;
+        opacity: 0.9;
+        margin-bottom: 10px;
+    }
+    .footer-det h5 {
+        font-size: 13px;
+        margin: 0px 0;
+        line-height: 1.6;
+    }
+    
 }

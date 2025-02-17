@@ -54,9 +54,9 @@ const Services = () => {
                 <div className='service-img'>
                     <img src={ElevationImage} alt='builders' />
                     <a href="Elevation"><button>3D Elevation Design</button></a>
-                </div><div className='service-img'>
+                </div><div className='service-img2'>
                     <img src={ElectricImage} alt='builders' />
-                  <a href="Electric"><button>Electic work</button></a>
+                  <a href="Electric"><button>Electric work</button></a>
                 </div>
                   
                 <div className='service-img'>
@@ -71,7 +71,7 @@ const Services = () => {
                     <img src={InteriorImage1} alt='builders' />
                    <a href="Interior"><button>Interior Design</button></a>
                 </div>
-                <div className='service-img'>
+                <div className='service-img2'>
                     <img src={CarpentryImage} alt='builders' />
                     <a href="Carpentary"><button>Carpentry work</button></a>
                 </div>

@@ -30,9 +30,9 @@ function Footer() {
                 </div>
                 <div className='footer-det'>
                     <h1><span>Contact Us</span></h1>
-                    <h5><i class="bi bi-telephone-fill">  </i>&nbsp;&nbsp;+91 9597751076, 944310204</h5><br></br>
+                    <h5><i class="bi bi-telephone-fill">  </i>&nbsp;&nbsp;+91 9597751076, 9443102048</h5><br></br>
                     <h5><i class="bi bi-envelope">  </i>&nbsp;&nbsp;  nagercoilbuilders31@gmail.com</h5><br></br>
-                    <h5><i class="bi bi-globe">  </i>&nbsp;&nbsp;  www.nagercoil.com</h5><br></br>
+                    <h5><i class="bi bi-globe">  </i>&nbsp;&nbsp;  www.nagercoilbuilders.com</h5><br></br>
                     <h5><i class="bi bi-geo-alt">  </i>&nbsp;&nbsp;  4/26A Adaikalapattinam, Pavoorchatram.</h5>
                 </div>
             </div>
