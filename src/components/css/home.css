@@ -788,7 +788,7 @@
 }
 
 .Team{
-  animation: flip 2s ease-in-out infinite;
+  animation: flip 2s ease-in-out ;
   transform-style: preserve-3d;
 }
 
