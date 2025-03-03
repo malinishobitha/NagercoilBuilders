@@ -23,7 +23,7 @@
     background-color: #fbf6b5;
     border-radius: 30px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
-
+    text-align: center;
     
 }
 
@@ -35,6 +35,7 @@
 .Enquiry h1 {
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .Enquiry p {
@@ -102,10 +103,37 @@
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    width: 100%;
+    width: 80%;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+}
+.success-message {
+    background-color: #dff0d8; /* Light green */
+    color: #3c763d; /* Dark green */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeOut 3s ease-in-out forwards;
+}
+
+/* ✅ Error message styling (if needed) */
+.error-message {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ✅ Fade Out Animation */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 /* Button Hover */
@@ -157,13 +185,13 @@
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 320px) {
     .container {
         padding: 10px;
     }
 
     .Enquiry h1 {
-        font-size: 1.5rem;
+        font-size: 18px;
     }
 
     .Enquiry p {

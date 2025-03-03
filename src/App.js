@@ -7,7 +7,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import HomePage from "./components/Home";
 import Footer from "./components/Footer";
 import Services from './components/services';
-import Contact from './components/Contact';
 import Projects from "./components/Projects";  
 import About from './components/About';
 import ConsultingPage from "./components/ConsultingPage";
@@ -23,6 +22,9 @@ import RenovationPage from './components/Renovation';
 import CarpentryPage from "./components/Carpentary";
 import InteriorworkPage from "./components/Interiorwork";
 import EnquiryPage from "./components/Enquiryform";
+import Package from "./components/Package";
+import Standardpackage from "./components/Standardpackage";
+import Premiumpackage from "./components/Premiumpackage";
 
 
 const App = () => {
@@ -33,7 +35,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} /> 
         <Route path='/About' element={<About />} />
         <Route path="/services" element={<Services />} /> 
-        <Route path="/contact" element={<Contact />} />  
+        <Route path="/Package" element={<Package />} />  
         <Route path="/Projects" element={<Projects />} />  
         <Route path="/ConsultingPage" element={<ConsultingPage />} />  
         <Route path="/Estimate" element={<EstimatePage />} />  
@@ -48,8 +50,10 @@ const App = () => {
         <Route path="/Carpentary" element={<CarpentryPage />} />  
         <Route path="/Interiorwork" element={<InteriorworkPage />} />  
         <Route path="/Enquiryform" element={<EnquiryPage />} />  
+        <Route path="/StandardPackage" element={<Standardpackage />} />  
+        <Route path="/PremiumPackage" element={<Premiumpackage />} />  
 
-
+ 
       </Routes>
       <Footer />
     </Router>

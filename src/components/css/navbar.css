@@ -1,37 +1,22 @@
 .navbar {
-    background-color: #040837 !important;
-    padding: 20px 15px;
-  }
-  .navbar-brand {
-    font-weight: bold;
-  }
+  background-color: #040837 !important;
+  padding: 20px 15px;
+}
   .navbar img{
-    width: 70px;
-    
+    width: 80px;
+    border: 0px solid red;
+    margin-left: 20px;
   }
   .nav-link {
     color: white !important;
-    font-size: 16px;
-    
+    font-size: 14px;
+   
   }
   .nav-item a{
       font-weight: 600;
   }
   .nav-link:hover {
     color: #ffd700 !important; 
-  }
-  
-  .navbar-toggler-icon {
-    background-color: white !important;
-  }
-  
-  /* Button color */
-  .navbar-toggler {
-    background-color: #ffd700 !important; 
-  }
-  
-  .navbar-toggler:hover {
-    background-color: #ffcc00 !important;
   }
   
   .nav-button button {
@@ -41,6 +26,7 @@
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
+    margin-top: -5px;
   }
   
   .nav-button button:hover {
@@ -49,24 +35,40 @@
   }
   
   .navbar-nav .nav-link {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
   }
-  
-  /* Navbar for smaller screens */
-  .navbar-toggler {
-    background-color: #ffd700 !important;
-  }
-  
+   
   .navbar-toggler-icon {
-    background-color: white;
+    background-color: #FFCC00;
   }
   
   .navbar-light .navbar-nav .nav-link {
     color: white !important;
   }
   .navbar-collapse{
-     border:0px solid black;
-     max-width: 500px;
+     border:0px solid rgb(154, 143, 143);
+     max-width: 550px;
      margin: auto;
      margin-right: 40px;  
+  }
+   .navbar-nav .nav-link.active {
+    color: #FFCC00 !important; 
+  } 
+  @media (max-width: 768px) {
+    .navbar-toggler {
+        position: absolute;
+        right: 20px; 
+        top: 10px;
+    }
+}
+
+  @media (max-width: 480px) {
+   .nav-button{
+    margin-left: 40%;
+    margin-top:10px;
+   }
+   .nav-item{
+    text-align: center;
+   }
   }

@@ -3,7 +3,7 @@ import BannerImage from './images/services we provide img.png';
 import "./css/home.css";
 import consultingImage from './images/Consulting img.png';
 import estimateImage from './images/Estimate img.png';
-import planningImage from './images/Plan and design img.png';
+import planningImage from './images/Architecture.jpeg';
 import constructionImage from './images/Construction img.png';
 import FloorImage from './images/Flooring work img.png';
 import paintingImage from './images/Painting img.png';

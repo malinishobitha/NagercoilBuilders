@@ -10,7 +10,7 @@ import houseteamImage from './images/In house team exports img.png';
 import whychoose from './images/why choose us img.png';
 import consultingImage from './images/Consulting img.png';
 import estimateImage from './images/Estimate img.png';
-import planningImage from './images/Plan and design img.png';
+import planningImage from './images/Architecture.jpeg';
 import constructionImage from './images/Construction img.png';
 import FloorImage from './images/Flooring work img.png';
 import paintingImage from './images/Painting img.png';
@@ -41,35 +41,21 @@ function HomePage() {
                 <div className='nagercovilbuilders'>
                     <img src={backgroundImage} alt='background' />
                     <h1><span>Nagercoil</span> Builders</h1>
-                    <div className='builder-det'>
-
-                        <div className='builder-item'>
-                            <img src={calendar} alt='builders' />
-                            <p>Calenderted <br></br>date</p>
-                        </div>
-                        <div className='builder-item'>
-                            <img src={quality} alt='builders' />
-                            <p>Quality <br></br>guaranteed</p>
-                        </div>
-                        <div className='builder-item'>
-                            <img src={cost} alt='builders' />
-                            <p>Low Cost</p>
-                        </div>
-                        <div className='builder-item'>
-                            <img src={toprated} alt='builders' />
-                            <p>Top Rated</p>
-                        </div>
-                        <div className='builder-item'>
-                            <img src={Budget} alt='builders' />
-                            <p>Budget Friendly</p>
+                    <div className="carousel-container">
+                        <div className="builder-det">
+                            <div className="builder-item"><img src={calendar} alt="builders" /><p>Calenderted date</p></div>
+                            <div className="builder-item"><img src={quality} alt="builders" /><p>Quality guaranteed</p></div>
+                            <div className="builder-item"><img src={cost} alt="builders" /><p>Low Cost</p></div>
+                            <div className="builder-item"><img src={toprated} alt="builders" /><p>Top Rated</p></div>
+                            <div className="builder-item"><img src={Budget} alt="builders" /><p>Budget Friendly</p></div>
                         </div>
                     </div>
                 </div>
 
                 <div className='whychoose'>
                     <h1>Why <span>Choose</span> Us </h1>
-                    <p>At Nagercoil Builders we deliver top quality construction with precision, reliability,
-                        and excellence. Our expert team ensures on time project completion, using premium
+                    <p> At Nagercoil Builders we deliver top-quality construction with precision, reliability,
+                        and excellence. Our expert team ensures on-time project completion, using premium
                         materials and innovative techniques. With a commitment to safety and customer
                         satisfaction, we bring your vision to life with professionalism and integrity. Choose
                         us for a hassle free building experience!</p>
@@ -184,74 +170,77 @@ function HomePage() {
                     </div>
                 </div>
                 <div className='viewbutton'>
-                    <button className='view'>View More</button>
+                    <a href='services'><button className='view'>View More</button></a>
                 </div>
                 <div className='client-reviews-det'>
                     <h1>Our <span>Client</span> Reviews</h1>
                     <div className='client-details'>
-                        
 
-                            <div className='client-review-img'>
-                                <img src={clientRieview} alt='rieview' />
-                                <div className='client-review'>
-                                    <div className='profileimg'>
-                                        <img src={clientimage} alt='clientimg' />
-                                        <h2>Aaron</h2>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel felis ac erat facilisis.</p>
-                                    <p>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-half"></i>
-                                    </p>
+
+                        <div className='client-review-img'>
+                            <img src={clientRieview} alt='rieview' />
+                            <div className='client-review'>
+                                <div className='profileimg'>
+                                    <img src={clientimage} alt='clientimg' />
+                                    <h2>Aaron</h2>
                                 </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel felis ac erat facilisis.</p>
+                                <p>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-half"></i>
+                                </p>
                             </div>
+                        </div>
 
-                            <div className='client-review-img'>
+                        <div className='client-review-img'>
 
-                                <img src={clientReview1} alt='rieview' />
-                                <div className='client-review'>
+                            <img src={clientReview1} alt='rieview' />
+                            <div className='client-review'>
 
-                                    <div className='profileimg'>
-                                        <img src={clientimage1} alt='clientimg' />
-                                        <h2>Adelina</h2>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel odio eget libero volutpat pharetra.</p>
-                                    <p>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-half"></i>
-                                    </p>
+                                <div className='profileimg'>
+                                    <img src={clientimage1} alt='clientimg' />
+                                    <h2>Adelina</h2>
                                 </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel felis ac erat facilisis.</p>
+                                <p>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-half"></i>
+                                </p>
                             </div>
+                        </div>
 
-                            <div className='client-review-img'>
+                        <div className='client-review-img'>
 
-                                <img src={clientReview2} alt='rieview' />
+                            <img src={clientReview2} alt='rieview' />
 
-                                <div className='client-review'>
-                                    <div className='profileimg'>
-                                        <img src={clientimage2} alt='clientimg' />
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a lacus nec risus cursus convallis.</p>
-                                    <p>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-fill"></i>
-                                        <i className="bi bi-star-half"></i>
-                                    </p>
+                            <div className='client-review'>
+                                <div className='profileimg'>
+                                    <img src={clientimage2} alt='clientimg' />
                                 </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a lacus nec risus cursus convallis.</p>
+                                <p>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-fill"></i>
+                                    <i className="bi bi-star-half"></i>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-       
+
+
+
+        </div>
+
 
 
     );
